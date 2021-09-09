@@ -62,7 +62,7 @@ class TasksController extends Controller
         $task = Task::findOrFail($id);
 
         // メッセージ編集ビューでそれを表示
-        return view('task.edit', [
+        return view('tasks.edit', [
             'task' => $task,
         ]);
     }
